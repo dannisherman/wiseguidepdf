@@ -5,16 +5,15 @@ import PDFLibrary from './PDFLibrary';
 import EmailSignup from './EmailSignup';
 import Footer from './Footer';
 
-const AppLayout: React.FC = () => {
+export const AppLayout: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <main>
-        {/* <Header /> */}
         <p>Hello from AppLayout</p>
-        { /*<Hero /> */}
-        { /*<PDFLibrary /> */}
-        {/* <EmailSignup />*/ }
-        { <Footer /> }
+        <Hero />
+        <PDFLibrary />
+        <EmailSignup />
+        <Footer />
       </main>
     </div>
   );
