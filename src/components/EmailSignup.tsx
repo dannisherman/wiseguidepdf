@@ -39,8 +39,8 @@ const EmailSignup: React.FC = () => {
   };
 
   return (
-    <div className="py-16 px-4 bg-blue-600 min-h-screen">
-      <div className="max-w-xl mx-auto text-center">
+    <div id="signup" className="py-16 px-4 bg-blue-600">
+    <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Create Your Account
         </h2>
