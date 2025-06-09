@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ✅ Import Link
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -13,6 +14,8 @@ const Hero: React.FC = () => {
           Free PDF guides to help you navigate technology safely and confidently. 
           Learn email, avoid scams, and master your smartphone step-by-step.
         </p>
+
+        {/* 🔽 Add this section to include the signup button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button 
             size="lg" 
@@ -20,6 +23,7 @@ const Hero: React.FC = () => {
           >
             Get Free PDF Guides
           </Button>
+
           <Button 
             variant="outline" 
             size="lg" 
@@ -27,8 +31,17 @@ const Hero: React.FC = () => {
           >
             Browse Library
           </Button>
+
+          <Link to="/signup">
+            <Button 
+              size="lg" 
+              className="bg-yellow-500 hover:bg-yellow-600 text-slate-800 px-8 py-3 text-lg font-semibold"
+            >
+              Sign Up
+            </Button>
+          </Link>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           <Card className="p-6 bg-white shadow-md hover:shadow-lg transition-shadow">
             <div className="text-blue-600 text-4xl mb-4">📧</div>
