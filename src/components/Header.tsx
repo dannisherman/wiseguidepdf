@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom'; 
 
 const Header: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
             <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">
               Blog
             </a>
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">
+            <a href="/about" className="text-slate-600 hover:text-blue-600 transition-colors">
               About
             </a>
             <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">
