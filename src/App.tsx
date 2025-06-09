@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import EmailSignup from './components/EmailSignup';
+import About from './pages/About';
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/signup" element={<EmailSignup />} />
+             <Route path="/about" element={<About />} /> {/* 👈 Add this line */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
