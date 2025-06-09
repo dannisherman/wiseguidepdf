@@ -135,14 +135,7 @@ const EmailSignup: React.FC = () => {
                 Already have an account? Log in
               </Button>
 
-              <Button 
-                type="button"
-                variant="ghost"
-                className="w-full text-slate-500"
-                onClick={() => navigate('/')}
-              >
-                Back to Homepage
-              </Button>
+              
             </form>
           )}
         </Card>
