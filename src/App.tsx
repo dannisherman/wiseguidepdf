@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import EmailSignup from './components/EmailSignup';
 import About from './pages/About';
+import Blog from './pages/Blog';
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/signup" element={<EmailSignup />} />
              <Route path="/about" element={<About />} /> {/* 👈 Add this line */}
             <Route path="*" element={<NotFound />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </Router>
       </TooltipProvider>
