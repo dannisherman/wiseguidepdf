@@ -13,8 +13,8 @@ const AppLayout: React.FC = () => {
         <p>Hello from AppLayout</p>
         { /*<Hero /> */}
         { /*<PDFLibrary /> */}
-        { <EmailSignup /> }
-        {/* <Footer /> */}
+        {/* <EmailSignup />*/ }
+        { <Footer /> }
       </main>
     </div>
   );
