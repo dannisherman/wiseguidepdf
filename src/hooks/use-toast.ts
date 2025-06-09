@@ -179,7 +179,16 @@ function useToast() {
         listeners.splice(index, 1);
       }
     };
-  }, []); // ✅ safe
+  }, []);
+
+  if (!state || !Array.isArray(state.toasts)) {
+    console.warn("Toast state not ready");
+    return {
+      toasts: [],
+      toast,
+      dismiss: () => {},
+    };
+  }
 
   return {
     ...state,
@@ -188,5 +197,6 @@ function useToast() {
       dispatch({ type: "DISMISS_TOAST", toastId }),
   };
 }
+
 
 export { useToast, toast };
