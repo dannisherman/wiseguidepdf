@@ -11,6 +11,7 @@ module.exports = {
       },
       textColor: {
         foreground: 'hsl(var(--foreground) / <alpha-value>)',
+        'dark-slate': 'hsl(222.2 47.4% 11.2%)', // Customize this HSL to match your intent
       },
       borderColor: {
         border: 'hsl(var(--border) / <alpha-value>)',
