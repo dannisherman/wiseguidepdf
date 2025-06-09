@@ -12,8 +12,8 @@ const AppLayout: React.FC = () => {
         {/* <Header /> */}
         <p>Hello from AppLayout</p>
         { /*<Hero /> */}
-        { <PDFLibrary /> }
-        {/* <EmailSignup /> */}
+        { /*<PDFLibrary /> */}
+        { <EmailSignup /> }
         {/* <Footer /> */}
       </main>
     </div>
