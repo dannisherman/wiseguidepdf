@@ -17,22 +17,22 @@ const Header: React.FC = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">
-              Home
-            </a>
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">
-              PDF Library
-            </a>
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">
-              Blog
-            </a>
-            <a href="/about" className="text-slate-600 hover:text-blue-600 transition-colors">
-              About
-            </a>
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors">
-              Contact
-            </a>
-          </nav>
+  <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">
+    Home
+  </Link>
+  <Link to="/library" className="text-slate-600 hover:text-blue-600 transition-colors">
+    PDF Library
+  </Link>
+  <Link to="/blog" className="text-slate-600 hover:text-blue-600 transition-colors">
+    Blog
+  </Link>
+  <Link to="/about" className="text-slate-600 hover:text-blue-600 transition-colors">
+    About
+  </Link>
+  <Link to="/contact" className="text-slate-600 hover:text-blue-600 transition-colors">
+    Contact
+  </Link>
+</nav>
           
           <a href="#signup">
   <Button className="bg-yellow-500 hover:bg-yellow-600 text-slate-800 font-semibold">
