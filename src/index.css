@@ -51,8 +51,10 @@
 
 @layer base {
   * {
-    @apply border border-gray-300;
+    /* Removed border-border */
+    box-sizing: border-box;
   }
+}
   html {
     scroll-behavior: smooth;
   }
