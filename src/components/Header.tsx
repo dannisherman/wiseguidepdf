@@ -33,11 +33,11 @@ const Header: React.FC = () => {
             </a>
           </nav>
           
-          <Button 
-            className="bg-yellow-500 hover:bg-yellow-600 text-slate-800 font-semibold"
-          >
-            Get Started
-          </Button>
+          <a href="#signup">
+  <Button className="bg-yellow-500 hover:bg-yellow-600 text-slate-800 font-semibold">
+    Get Started
+  </Button>
+</a>
         </div>
       </div>
     </header>
