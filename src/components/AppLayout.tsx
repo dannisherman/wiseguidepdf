@@ -4,9 +4,7 @@ import Hero from './Hero';
 import PDFLibrary from './PDFLibrary';
 import EmailSignup from './EmailSignup';
 import Footer from './Footer';
-import { SimpleNav } from "@/components/SeniorUIKit/SimpleNav";
-import { AccessibleButton } from "@/components/SeniorUIKit/AccessibleButton";
-import { TooltipWrapper } from "@/components/SeniorUIKit/TooltipWrapper";
+import { SimpleNav } from './SeniorUIKit/SimpleNav';
 
 interface AppLayoutProps {
   children: React.ReactNode;
