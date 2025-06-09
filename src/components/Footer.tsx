@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
               </div>
-              <h3 className="text-xl font-bold">WiseGuidePDF</h3>
+              <h3 className="text-white text-xl font-bold mb-4">WiseGuidePDF</h3>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
               Digital literacy made easy for seniors. Free PDF guides to help you navigate technology safely and confidently.
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Home</a></li>
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors">PDF Library</a></li>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Free Guides</h4>
+            <h4 className="text-white font-semibold mb-4">Free Guides</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Email Safety</a></li>
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Avoid Scams</a></li>
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="text-white font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Contact Us</a></li>
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Privacy Policy</a></li>
