@@ -2,29 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
-
+// ✅ Corrected: Function declaration syntax
 const handleReadMore = (pdfUrl: string) => {
   const confirmDownload = window.confirm("Would you like to download this guide as a PDF?");
   if (confirmDownload) {
-    window.open(pdfUrl, "_blank"); // Opens PDF in new tab
+    window.open(pdfUrl, "_blank");
   }
 };
 
 const mockPosts = [
   {
-  id: 1,
-  title: "How to Spot Online Scams",
-  excerpt: "Learn the common signs of online scams...",
-  author: "Danielle M.",
-  date: "June 9, 2025",
-  pdf: "/pdfs/how-to-spot-online-scams.pdf"
-},
+    id: 1,
+    title: "How to Spot Online Scams",
+    excerpt: "Learn the common signs of online scams and how to stay safe on the web.",
+    author: "Danielle M.",
+    date: "June 9, 2025",
+    pdf: "/pdfs/how-to-spot-online-scams.pdf"
+  },
   {
     id: 2,
-    title: 'Getting Started with Email',
-    excerpt: 'This step-by-step guide will help you send your first email with confidence.',
-    author: 'John T.',
-    date: 'June 7, 2025'
+    title: "Getting Started with Email",
+    excerpt: "This step-by-step guide will help you send your first email with confidence.",
+    author: "John T.",
+    date: "June 7, 2025",
+    pdf: "/pdfs/getting-started-with-email.pdf"
   }
 ];
 
@@ -49,11 +50,11 @@ const Blog: React.FC = () => {
                   By {post.author} • {post.date}
                 </div>
                 <Button
-  onClick={() => handleReadMore(post.pdf)}
-  className="text-blue-600 hover:underline mt-4"
->
-  Read More →
-</Button>
+                  onClick={() => handleReadMore(post.pdf)}
+                  className="text-blue-600 hover:underline mt-4"
+                >
+                  Read More →
+                </Button>
               </div>
             ))}
           </div>
