@@ -8,15 +8,14 @@ import Footer from './Footer';
 const AppLayout: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <main>
-        <Hero />
-        <PDFLibrary />
-        <EmailSignup />
+        {/* <Header /> */}
+        <p>Hello from AppLayout</p>
+        {/* <Hero /> */}
+        {/* <PDFLibrary /> */}
+        {/* <EmailSignup /> */}
+        {/* <Footer /> */}
       </main>
-      <Footer />
     </div>
   );
 };
-
-export default AppLayout;
