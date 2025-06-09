@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
+import tsconfigPaths from "vite-tsconfig-paths"; 
 import path from "node:path";
 
 
@@ -10,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [
-    react()
+    react(), tsconfigPaths()
   ].filter(Boolean),
   resolve: {
     alias: {
