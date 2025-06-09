@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             size="lg" 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
           >
-            Get Free PDF Guides
+            Get PDF Guides
           </Button>
 
           <Button 

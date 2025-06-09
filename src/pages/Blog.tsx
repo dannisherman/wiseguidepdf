@@ -1,14 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+
+
+const handleReadMore = (pdfUrl: string) => {
+  const confirmDownload = window.confirm("Would you like to download this guide as a PDF?");
+  if (confirmDownload) {
+    window.open(pdfUrl, "_blank"); // Opens PDF in new tab
+  }
+};
 
 const mockPosts = [
   {
-    id: 1,
-    title: 'How to Spot Online Scams',
-    excerpt: 'Learn the common signs of online scams and how to stay safe on the web.',
-    author: 'Danielle M.',
-    date: 'June 9, 2025'
-  },
+  id: 1,
+  title: "How to Spot Online Scams",
+  excerpt: "Learn the common signs of online scams...",
+  author: "Danielle M.",
+  date: "June 9, 2025",
+  pdf: "/pdfs/how-to-spot-online-scams.pdf"
+},
   {
     id: 2,
     title: 'Getting Started with Email',
@@ -38,9 +48,12 @@ const Blog: React.FC = () => {
                 <div className="text-sm text-slate-500 mb-4">
                   By {post.author} • {post.date}
                 </div>
-                <Link to={`/blog/${post.id}`} className="text-blue-600 hover:underline font-medium">
-                  Read More →
-                </Link>
+                <Button
+  onClick={() => handleReadMore(post.pdf)}
+  className="text-blue-600 hover:underline mt-4"
+>
+  Read More →
+</Button>
               </div>
             ))}
           </div>
