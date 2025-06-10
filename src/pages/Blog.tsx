@@ -39,6 +39,14 @@ const Blog: React.FC = () => {
           <p className="text-lg text-slate-600 mb-8">
             Discover stories, tech tips, and experiences from fellow seniors and supporters.
           </p>
+           {/* Top-left Home button */}
+                <div className="absolute top-4 left-4">
+                  <Link to="/">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded shadow">
+                      ← Home
+                    </button>
+                  </Link>
+                </div>
 
           {/* Blog Posts */}
           <div className="space-y-8">

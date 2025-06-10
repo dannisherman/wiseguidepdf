@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const About: React.FC = () => {
   return (
     <div className="bg-white min-h-screen py-16 px-4 relative">
